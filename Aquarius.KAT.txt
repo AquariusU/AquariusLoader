@@ -1,0 +1,298 @@
+
+wait(2)
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "HI!"; -- the title 
+	Text = "Injecting Aquarius"; -- what the text says 
+	Duration = 5; -- how long the notification should in secounds
+})
+
+wait(0.9)
+
+local ScreenGui = Instance.new("ScreenGui")
+local AquariusU = Instance.new("Frame")
+local Lib = Instance.new("Frame")
+local HubName = Instance.new("TextLabel")
+local CoolLine = Instance.new("Frame")
+local Game = Instance.new("TextLabel")
+local MainCheats = Instance.new("TextButton")
+local CreditsUi = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local AutoKill = Instance.new("TextButton")
+local E = Instance.new("TextButton")
+local Sprint = Instance.new("TextButton")
+local Credits = Instance.new("Frame")
+local tittle = Instance.new("TextLabel")
+local UI = Instance.new("TextLabel")
+local Scripts = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+AquariusU.Name = "AquariusU"
+AquariusU.Parent = ScreenGui
+AquariusU.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+AquariusU.Position = UDim2.new(0.0784372762, 0, 0.0367170535, 0)
+AquariusU.Size = UDim2.new(0, 492, 0, 303)
+
+Lib.Name = "Lib"
+Lib.Parent = AquariusU
+Lib.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Lib.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Lib.Position = UDim2.new(0, 0, 0.227722779, 0)
+Lib.Size = UDim2.new(0, 100, 0, 234)
+
+HubName.Name = "HubName"
+HubName.Parent = AquariusU
+HubName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HubName.BackgroundTransparency = 1.000
+HubName.Size = UDim2.new(0, 121, 0, 38)
+HubName.Font = Enum.Font.SourceSans
+HubName.Text = "AquariusU"
+HubName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HubName.TextSize = 21.000
+HubName.TextWrapped = true
+
+CoolLine.Name = "Cool Line"
+CoolLine.Parent = AquariusU
+CoolLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolLine.Position = UDim2.new(0.0203252044, 0, 0.11881189, 0)
+CoolLine.Size = UDim2.new(0, 100, 0, 2)
+
+Game.Name = "Game"
+Game.Parent = AquariusU
+Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Game.BackgroundTransparency = 1.000
+Game.Position = UDim2.new(-0.0040650405, 0, 0.102310225, 0)
+Game.Size = UDim2.new(0, 144, 0, 38)
+Game.Font = Enum.Font.SourceSans
+Game.Text = "K.A.T"
+Game.TextColor3 = Color3.fromRGB(255, 255, 255)
+Game.TextSize = 21.000
+Game.TextWrapped = true
+
+MainCheats.Name = "MainCheats"
+MainCheats.Parent = AquariusU
+MainCheats.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+MainCheats.Position = UDim2.new(0, 0, 0.267326742, 0)
+MainCheats.Size = UDim2.new(0, 100, 0, 31)
+MainCheats.Font = Enum.Font.SourceSans
+MainCheats.Text = "Main Cheats"
+MainCheats.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainCheats.TextScaled = true
+MainCheats.TextSize = 14.000
+MainCheats.TextWrapped = true
+
+CreditsUi.Name = "Credits Ui"
+CreditsUi.Parent = AquariusU
+CreditsUi.BackgroundColor3 = Color3.fromRGB(127, 127, 127)
+CreditsUi.Position = UDim2.new(0, 0, 0.41254124, 0)
+CreditsUi.Size = UDim2.new(0, 100, 0, 31)
+CreditsUi.Font = Enum.Font.SourceSans
+CreditsUi.Text = "Credit Ui"
+CreditsUi.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsUi.TextScaled = true
+CreditsUi.TextSize = 14.000
+CreditsUi.TextWrapped = true
+CreditsUi.MouseButton1Down:connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Broken!"; -- the title 
+		Text = "Will be fixed on 3.2.2021"; -- what the text says 
+		Duration = 5; -- how long the notification should in secounds
+	})
+end)
+
+TextLabel.Parent = AquariusU
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.289670885, 0, 0.0388768911, 0)
+TextLabel.Size = UDim2.new(0, 306, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Thank you for your purchase!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+AutoKill.Name = "AutoKill"
+AutoKill.Parent = AquariusU
+AutoKill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AutoKill.Position = UDim2.new(0.223577231, 0, 0.234323427, 0)
+AutoKill.Size = UDim2.new(0, 142, 0, 50)
+AutoKill.Font = Enum.Font.SourceSans
+AutoKill.Text = "AutoKill"
+AutoKill.TextColor3 = Color3.fromRGB(0, 0, 0)
+AutoKill.TextScaled = true
+AutoKill.TextSize = 14.000
+AutoKill.TextWrapped = true
+AutoKill.MouseButton1Down:connect(function()
+	--Subscribe to Ducky Exploits
+	function nearestPlayerToRay()
+		local dist = math.huge
+		local ray
+
+		for i,v in pairs(game.Players:GetChildren()) do
+			if v ~= game.Players.LocalPlayer and v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("Head") and not v.Character:FindFirstChild("ForceField") then
+				if v.Character.Humanoid.Health > 0 and v.Character:FindFirstChild("Head") then -- needed..
+					local newVec = (v.Character.Head.Position - game.Players.LocalPlayer.Character.Head.Position)
+					if newVec.magnitude < dist then
+						local toRay = Ray.new(game.Players.LocalPlayer.Character.Head.Position, newVec)
+						if not workspace:FindPartOnRayWithIgnoreList(toRay, {game.Players.LocalPlayer.Character, v.Character, workspace.WorldIgnore, workspace.CurrentCamera}) then
+							dist = newVec.magnitude
+							ray = toRay
+						end
+					end
+				end
+			end
+		end
+		return ray
+	end
+
+	local ray
+
+	function init()
+		local knife = game.Players.LocalPlayer.Character:WaitForChild("Knife")
+		local scr = getsenv(knife.KnifeServer.KnifeClient)
+		if scr then
+			local ir = scr.inputReleased
+			local u7 = debug.getupvalue(ir, 2)
+			local cam = debug.getupvalue(ir, 5)
+			debug.setupvalue(ir, 5, setmetatable({}, {
+				__index = function(t,k)
+					if k == "ScreenPointToRay" then
+						if ray ~= nil then
+							return function() return ray end
+						end
+					end
+					return cam[k]
+				end
+			}))
+
+
+			while wait(.1) do
+				if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+					break    
+				end
+				ray = nearestPlayerToRay()
+				if ray then
+					scr.inputDown()
+					u7.ChargeStart = -math.huge
+					ir()
+				end
+			end
+		end
+	end
+
+	init()
+	game.Players.LocalPlayer.CharacterAdded:connect(function()
+		print("hi")
+		wait()
+		init()
+	end)
+end)
+
+E.Name = "E"
+E.Parent = AquariusU
+E.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+E.Position = UDim2.new(0.223577231, 0, 0.561056077, 0)
+E.Size = UDim2.new(0, 142, 0, 50)
+E.Font = Enum.Font.SourceSans
+E.Text = "ESP"
+E.TextColor3 = Color3.fromRGB(0, 0, 0)
+E.TextScaled = true
+E.TextSize = 14.000
+E.TextWrapped = true
+E.MouseButton1Down:connect(function()
+	local gui = Instance.new("BillboardGui");
+	gui.Name = "";
+	gui.AlwaysOnTop = true;
+	gui.LightInfluence = 0;
+	gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+	local frame = Instance.new("Frame", gui);
+	frame.BackgroundColor3 = Color3.fromRGB(170, 0, 0);
+	frame.Size = UDim2.new(1, 0, 1, 0);
+	frame.BorderSizePixel = 4;
+	frame.BorderColor3 = Color3.fromRGB(0, 0, 0);
+	local gi = gui:Clone();
+	local body = frame:Clone();
+	body.Parent = gi;
+	body.BackgroundColor3 = Color3.fromRGB(0, 170, 170);
+
+	for _, v in pairs(game:GetService("Players"):GetPlayers()) do
+		if v.Name ~= game:GetService("Players").LocalPlayer.Name and v.Character and v.Character:FindFirstChild("Head") then
+			gui:Clone().Parent = v.Character.Head;
+		end
+	end
+end)
+
+Sprint.Name = "Sprint"
+Sprint.Parent = AquariusU
+Sprint.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sprint.Position = UDim2.new(0.621951222, 0, 0.234323412, 0)
+Sprint.Size = UDim2.new(0, 142, 0, 50)
+Sprint.Font = Enum.Font.SourceSans
+Sprint.Text = "Sprint"
+Sprint.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sprint.TextScaled = true
+Sprint.TextSize = 14.000
+Sprint.TextWrapped = true
+Sprint.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 23
+end)
+
+Credits.Name = "Credits"
+Credits.Parent = ScreenGui
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.Position = UDim2.new(0.504950523, 0, 0.0129589634, 0)
+Credits.Size = UDim2.new(0, 172, 0, 303)
+Credits.Visible = false
+
+tittle.Name = "tittle"
+tittle.Parent = Credits
+tittle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tittle.Position = UDim2.new(0, 0, 0.0627062693, 0)
+tittle.Size = UDim2.new(0, 172, 0, 50)
+tittle.Font = Enum.Font.SourceSans
+tittle.Text = "Aquarius u - credits"
+tittle.TextColor3 = Color3.fromRGB(0, 0, 0)
+tittle.TextScaled = true
+tittle.TextSize = 14.000
+tittle.TextWrapped = true
+
+UI.Name = "UI"
+UI.Parent = Credits
+UI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UI.Position = UDim2.new(0, 0, 0.31023103, 0)
+UI.Size = UDim2.new(0, 172, 0, 50)
+UI.Font = Enum.Font.SourceSans
+UI.Text = "Gui - OBAMA#3739"
+UI.TextColor3 = Color3.fromRGB(0, 0, 0)
+UI.TextScaled = true
+UI.TextSize = 14.000
+UI.TextWrapped = true
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Credits
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.Position = UDim2.new(0, 0, 0.58745873, 0)
+Scripts.Size = UDim2.new(0, 172, 0, 50)
+Scripts.Font = Enum.Font.SourceSans
+Scripts.Text = "Scripts- Me, Someone"
+Scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.TextScaled = true
+Scripts.TextSize = 14.000
+Scripts.TextWrapped = true
+
+TextButton.Parent = Credits
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.494186044, 0, 0.881188095, 0)
+TextButton.Size = UDim2.new(0, 87, 0, 36)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "CLOSE"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
